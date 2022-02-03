@@ -42,7 +42,7 @@ node_templates:
           region: { get_input: region }
           ssh_keypair: { get_input: ssh_keypair }
           aws_access_key: { get_secret: aws_access_key_id }
-          awss_secret_key: { get_secret: aws_secret_access_key }
+          aws_secret_key: { get_secret: aws_secret_access_key }
     relationships:
       - target: terraform
         type: cloudify.terraform.relationships.run_on_host
