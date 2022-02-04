@@ -70,13 +70,7 @@ node_templates:
 
 capabilities:
   instance_id:
-<<<<<<< HEAD
-    value: { get_attributes_list: [ ec2_instance, outputs, instance_id, value ] }
+    value: { get_attributes_list: [ cloud_resources, outputs, instance_id, value ] }
   instance_ip:
-    value: { get_attributes_list: [ ec2_instance, outputs, instance_ip, value ] }
-=======
-    value: { get_attribute: [ cloud_resources, outputs, instance_id, value ] }
-  instance_ip:
-    value: { get_attribute: [ cloud_resources, outputs, instance_ip, value ] }
+    value: { get_attributes_list: [ cloud_resources, outputs, instance_ip, value ] }
 
->>>>>>> main
